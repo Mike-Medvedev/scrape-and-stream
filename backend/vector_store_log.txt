@@ -1,0 +1,3444 @@
+Vector Store Search Results:
+* Welcome to Mantine, React components library that you always wished for
+
+Search
+
+Ctrl + K
+
+Getting started
+About Mantine
+API Overview
+Contribute
+Colors generator
+Help center
+Mantine UI
+
+THEMING
+
+STYLES
+
+GUIDES
+
+MANTINE HOOKS
+
+MANTINE FORM
+
+MANTINE CORE
+
+Layout
+
+AppShell
+AspectRatio
+Center
+Container
+Flex
+Grid
+Group
+SimpleGrid
+Space
+Stack
+
+Inputs
+
+Checkbox
+Chip
+ColorInput
+ColorPicker
+Fieldset
+FileInput
+Input
+JsonInput
+NativeSelect
+NumberInput
+PasswordInput
+PinInput
+Radio
+Rating
+SegmentedControl
+Slider
+Switch
+Textarea
+TextInput
+
+Combobox
+
+Autocomplete
+Combobox
+MultiSelect
+Pill
+PillsInput
+Select
+TagsInput
+
+Buttons
+
+ActionIcon
+Button
+CloseButton
+CopyButton
+FileButton
+UnstyledButton
+
+Navigation
+
+Anchor
+Breadcrumbs
+Burger
+NavLink
+Pagination
+Stepper
+Tabs
+Tree
+
+Feedback
+
+Alert
+Loader
+Notification
+Progress
+RingProgress
+SemiCircleProgress
+Skeleton
+
+Overlays
+
+Affix
+Dialog
+Drawer
+FloatingIndicator
+HoverCard
+LoadingOverlay
+Menu
+Modal
+Overlay
+Popover
+Tooltip
+
+Data Display
+
+Accordion
+Avatar
+BackgroundImage
+Badge
+Card
+ColorSwatch
+Image
+Indicator
+Kbd
+NumberFormatter
+Spoiler
+ThemeIcon
+Timeline
+
+Typography
+
+Blockquote
+Code
+Highlight
+List
+Mark
+Table
+Text
+Title
+TypographyStylesProvider
+
+Misc
+
+Box
+Collapse
+Divider
+FocusTrap
+Paper
+Portal
+ScrollArea
+Transition
+VisuallyHidden
+
+MANTINE DATES
+
+MANTINE CHARTS
+
+EXTENSIONS
+
+CHANGELOG
+
+TypographyStylesProvider
+
+Styles provider for html content
+
+Import
+
+import { TypographyStylesProvider } from '@mantine/core';
+
+Source
+
+View source code
+
+Docs
+
+Edit this page
+
+Package
+
+@mantine/core
+Usage
+
+Mantine does not include typography global styles. Use TypographyStylesProvider to add typography styles to your html content:
+
+import { TypographyStylesProvider } from '@mantine/core';
+
+function Demo() {
+  return (
+    <TypographyStylesProvider>
+      <div
+        dangerouslySetInnerHTML={{ __html: '<p>Your html here</p>' }}
+      />
+    </TypographyStylesProvider>
+  );
+}
+Example
+Example article
+
+This is example article from CSS-Tricks website written by Sarah Drasner. It is used as an example to showcase real world styles of TypographyStylesProvider component, please read full article on CSS-Tricks website.
+
+Article itself
+
+Let’s talk for a moment about how we talk about our teams. This might not seem like something that needs a whole article dedicated to it, but it’s actually quite crucial. The way that we refer to our teams sends signals: to stakeholders, to your peers, to the team itself, and even to ourselves. In addressing how we speak about our teams, we’ll also talk about accountability.
+
+I have noticed shared similarities in those folks I consider good managers whose teams deliver well, and those who don’t. It starts with how they communicate about their teams.
+
+Your team is “we”
+
+There can be a perception that as a manager of an organization you are in control at all times. Part of that control can invariably be perceived as how you appear to be in charge, are competent, or how you personally perform. Due to that, some bad behaviors can arise- not due to malice, but due to fear. For this reason, it can be tempting to take credit for success and avoid credit when there is failure.
+
+The irony is that the more that you try to hold on to these external perceptions, the more it will slip away. Why? Because the problems you are solving as a manager really aren’t about you.
+
+Your team is “we”. You are a driving force of that team, no matter how high up the hierarchy chain. What happens on that team is your responsibility. When you speak about your org, you should include yourself in the statement.
+
+When your team succeeds in something though, then you can praise them and leave yourself out of it. Here’s an example:
+
+They really pulled this project over the line, despite the incredibly tight project timeline. Everyone showed up and was driven throughout the engagement. They did a fantastic job.
+
+However, if the team failed at something, the pronoun is then I:
+
+I didn’t recognize how tight this turnaround was and failed to prioritize the team’s time well. I need to reconvene with everyone so we can come up with a better plan.
+
+And never, ever them:
+
+They didn’t adhere to this tight timeline. They just weren’t able to get this project over the line.
+
+Do you see how the last example shirks responsibility for what occurred? Too often I will hear managers relieve themselves of their duties when shit hits the fan, and that is exactly when a manager needs to step up, and dive in to the problems that are their responsibility.
+
+The wider organization
+
+There is another piece of this too, and it impacts how your team operates. It’s that your job is not to be the ambassador of who you manage and think of every other group as separate. You're part of a larger system. A company is composed of groups, but those groups can only be successful if they’re working together, not if they are protecting their own org at all costs.
+
+I admit I didn’t fully understand the depth of this until I read Patrick Lencioni’s The Advantage thanks to Dalia Havens, a peer at Netlify. In the book, Lencioni talks about how organizational health, not “being smart”, as the biggest key to success. Plenty of smart people with good ideas build companies and see them fail. Success lies in being able to work together.
+
+Fundamentally, other groups at the company are not separate from your group, rather that you’re all part of one whole. The Leadership Team is also a team, and should be treated as your team. How you speak about this team is equally important.
+
+As such, when we talk about successes and failures of any groups, these should also be shared. There should be a sense that you’re all working towards a common goal together, and every group contributes to it. Within a leadership team there should be trust and vulnerability to own their part so that the whole organization can operate at its best.
+
+Demo.tsx
+import { TypographyStylesProvider } from '@mantine/core';
+
+const html = '...html content here...';
+
+function Demo() {
+  return (
+    <TypographyStylesProvider>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </TypographyStylesProvider>
+  );
+}
+All styles demo
+
+TypographyStylesProvider includes styles for:
+
+paragraphs
+headings
+lists
+blockquotes
+tables
+links
+images
+hr
+kbd
+code and pre
+Heading 1
+Heading 2
+Heading 3
+Heading 4
+Heading 5
+Heading 6
+
+Mantine link
+
+Lorem ipsum, dolor sitamet consectetur adipisicing elit. Provident omnis laudantium itaque quisquam est, magnam harum, cum molestias necessitatibus obcaecati quod esse debitis velit nemo dolores deserunt. Quia, iure doloremque.
+
+list item - 1
+list item - 2
+list item - 3
+list item - 4
+list item - 1
+list item - 2
+list item - 3
+list item - 4
+Life is like an npm install – you never know what you are going to get. – Forrest Gump
+
+This is code, kbd and mark inside paragraph
+
+import { Avatar } from '@mantine/core';
+import image from './image.png';
+
+export function AvatarDemo() {
+  return <Avatar src={image} alt="it's me" />;
+}
+Element position	Element name	Symbol	Atomic mass
+6	Carbon	C	12.011
+7	Nitrogen	N	14.007
+39	Yttrium	Y	88.906
+56	Barium	Ba	137.33
+58	Cerium	Ce	140.12
+
+Previous
+
+Title
+
+Next
+
+Box
+
+Welcome to Mantine, React components library that you always wished for
+
+Build fully functional accessible web applications faster than ever
+
+About
+
+Contribute
+About Mantine
+Changelog
+Releases
+
+Community
+
+Chat on Discord
+Follow on X
+Follow on Github
+GitHub discussions
+
+Project
+
+Mantine UI
+Documentation
+Github organization
+npm organization
+
+Built by Vitaly Rtishchev and these awesome people
+
+Join Discord community
+Follow Mantine on X [Metadata: {'url': 'https://mantine.dev/core/typography-styles-provider/'}]
+==================================================
+* Welcome to Mantine, React components library that you always wished for
+
+Search
+
+Ctrl + K
+
+Getting started
+About Mantine
+API Overview
+Contribute
+Colors generator
+Help center
+Mantine UI
+
+THEMING
+
+STYLES
+
+GUIDES
+
+MANTINE HOOKS
+
+MANTINE FORM
+
+MANTINE CORE
+
+Layout
+
+AppShell
+AspectRatio
+Center
+Container
+Flex
+Grid
+Group
+SimpleGrid
+Space
+Stack
+
+Inputs
+
+Checkbox
+Chip
+ColorInput
+ColorPicker
+Fieldset
+FileInput
+Input
+JsonInput
+NativeSelect
+NumberInput
+PasswordInput
+PinInput
+Radio
+Rating
+SegmentedControl
+Slider
+Switch
+Textarea
+TextInput
+
+Combobox
+
+Autocomplete
+Combobox
+MultiSelect
+Pill
+PillsInput
+Select
+TagsInput
+
+Buttons
+
+ActionIcon
+Button
+CloseButton
+CopyButton
+FileButton
+UnstyledButton
+
+Navigation
+
+Anchor
+Breadcrumbs
+Burger
+NavLink
+Pagination
+Stepper
+Tabs
+Tree
+
+Feedback
+
+Alert
+Loader
+Notification
+Progress
+RingProgress
+SemiCircleProgress
+Skeleton
+
+Overlays
+
+Affix
+Dialog
+Drawer
+FloatingIndicator
+HoverCard
+LoadingOverlay
+Menu
+Modal
+Overlay
+Popover
+Tooltip
+
+Data Display
+
+Accordion
+Avatar
+BackgroundImage
+Badge
+Card
+ColorSwatch
+Image
+Indicator
+Kbd
+NumberFormatter
+Spoiler
+ThemeIcon
+Timeline
+
+Typography
+
+Blockquote
+Code
+Highlight
+List
+Mark
+Table
+Text
+Title
+TypographyStylesProvider
+
+Misc
+
+Box
+Collapse
+Divider
+FocusTrap
+Paper
+Portal
+ScrollArea
+Transition
+VisuallyHidden
+
+MANTINE DATES
+
+MANTINE CHARTS
+
+EXTENSIONS
+
+CHANGELOG
+
+Combobox
+
+Create custom select, autocomplete or multiselect inputs
+
+Import
+
+import { Combobox } from '@mantine/core';
+
+Source
+
+View source code
+
+Docs
+
+Edit this page
+
+Package
+
+@mantine/core
+Documentation
+Props
+Styles API
+Examples
+
+This page contains only a small set of examples, as the full code of the demos is long. You can find all 50+ examples on a separate page.
+
+Open Combobox examples page
+Usage
+
+Combobox provides a set of components and hooks to custom select, multiselect or autocomplete components. The component is very flexible – you have full control of the rendering and logic.
+
+Pick value
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>{options}</Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+useCombobox hook
+
+useCombobox hook provides combobox store. The store contains the current state of the component and handlers to update it. Created store must be passed to the store prop of Combobox:
+
+import { Combobox, useCombobox } from '@mantine/core';
+
+function Demo() {
+  const combobox = useCombobox();
+  return (
+    <Combobox store={combobox}>{/* Your implementation */}</Combobox>
+  );
+}
+useCombobox options
+
+useCombobox hooks accepts an options object with the following properties:
+
+interface UseComboboxOptions {
+  /** Default value for `dropdownOpened`, `false` by default */
+  defaultOpened?: boolean;
+
+  /** Controlled `dropdownOpened` state */
+  opened?: boolean;
+
+  /** Called when `dropdownOpened` state changes */
+  onOpenedChange?(opened: boolean): void;
+
+  /** Called when dropdown closes with event source: keyboard, mouse or unknown */
+  onDropdownClose?(eventSource: ComboboxDropdownEventSource): void;
+
+  /** Called when dropdown opens with event source: keyboard, mouse or unknown */
+  onDropdownOpen?(eventSource: ComboboxDropdownEventSource): void;
+
+  /** Determines whether arrow key presses should loop though items (first to last and last to first), `true` by default */
+  loop?: boolean;
+
+  /** `behavior` passed down to `element.scrollIntoView`, `'instant'` by default */
+  scrollBehavior?: ScrollBehavior;
+}
+
+You can import UseComboboxOptions type from @mantine/core package:
+
+import type { UseComboboxOptions } from '@mantine/core';
+Combobox store
+
+Combobox store is an object with the following properties:
+
+interface ComboboxStore {
+  /** Current dropdown opened state */
+  dropdownOpened: boolean;
+
+  /** Opens dropdown */
+  openDropdown(eventSource?: 'keyboard' | 'mouse' | 'unknown'): void;
+
+  /** Closes dropdown */
+  closeDropdown(eventSource?: 'keyboard' | 'mouse' | 'unknown'): void;
+
+  /** Toggles dropdown opened state */
+  toggleDropdown(
+    eventSource?: 'keyboard' | 'mouse' | 'unknown'
+  ): void;
+
+  /** Selected option index */
+  selectedOptionIndex: number;
+
+  /** Selects `Combobox.Option` by index */
+  selectOption(index: number): void;
+
+  /** Selects first `Combobox.Option` with `active` prop.
+   *  If there are no such options, the function does nothing.
+   */
+  selectActiveOption(): string | null;
+
+  /** Selects first `Combobox.Option` that is not disabled.
+   *  If there are no such options, the function does nothing.
+   * */
+  selectFirstOption(): string | null;
+
+  /** Selects next `Combobox.Option` that is not disabled.
+   *  If the current option is the last one, the function selects first option, if `loop` is true.
+   */
+  selectNextOption(): string | null;
+
+  /** Selects previous `Combobox.Option` that is not disabled.
+   *  If the current option is the first one, the function selects last option, if `loop` is true.
+   * */
+  selectPreviousOption(): string | null;
+
+  /** Resets selected option index to -1, removes `data-combobox-selected` from selected option */
+  resetSelectedOption(): void;
+
+  /** Triggers `onClick` event of selected option.
+   *  If there is no selected option, the function does nothing.
+   */
+  clickSelectedOption(): void;
+
+  /** Updates selected option index to currently selected or active option.
+   *  The function is required to be used with searchable components to update selected option index
+   *  when options list changes based on search query.
+   */
+  updateSelectedOptionIndex(target?: 'active' | 'selected'): void;
+
+  /** List id, used for `aria-*` attributes */
+  listId: string | null;
+
+  /** Sets list id */
+  setListId(id: string): void;
+
+  /** Ref of `Combobox.Search` input */
+  searchRef: React.MutableRefObject<HTMLInputElement | null>;
+
+  /** Moves focus to `Combobox.Search` input */
+  focusSearchInput(): void;
+
+  /** Ref of the target element */
+  targetRef: React.MutableRefObject<HTMLElement | null>;
+
+  /** Moves focus to the target element */
+  focusTarget(): void;
+}
+
+You can import ComboboxStore type from @mantine/core package:
+
+import type { ComboboxStore } from '@mantine/core';
+useCombobox handlers
+
+Combobox store handlers can be used to control Combobox state. For example, to open the dropdown, call openDropdown handler:
+
+import { Button, Combobox, useCombobox } from '@mantine/core';
+
+function Demo() {
+  const combobox = useCombobox();
+
+  return (
+    <Combobox>
+      <Combobox.Target>
+        <Button onClick={() => combobox.openDropdown()}>
+          Open dropdown
+        </Button>
+      </Combobox.Target>
+
+      {/* Your implementation */}
+    </Combobox>
+  );
+}
+
+You can use store handlers in useCombobox options. For example, you can call selectFirstOption when the dropdown is opened and resetSelectedOption when it is closed:
+
+import { Combobox, useCombobox } from '@mantine/core';
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownOpen: () => combobox.selectFirstOption(),
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  return (
+    <Combobox store={combobox}>{/* Your implementation */}</Combobox>
+  );
+}
+Combobox.Target
+
+Combobox.Target should be used as a wrapper for the target element or component. Combobox.Target marks its child as a target for dropdown and sets aria-* attributes and adds keyboard event listeners to it.
+
+Combobox.Target requires a single child element or component. The child component must accept ref and ...others props. You can use any Mantine component as a target without any additional configuration, for example, Button, TextInput or InputBase.
+
+Example of using Combobox.Target with TextInput component:
+
+Pick value or type anything
+Demo.tsx
+import { useState } from 'react';
+import { Combobox, TextInput, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox();
+  const [value, setValue] = useState('');
+  const shouldFilterOptions = !groceries.some((item) => item === value);
+  const filteredOptions = shouldFilterOptions
+    ? groceries.filter((item) => item.toLowerCase().includes(value.toLowerCase().trim()))
+    : groceries;
+
+  const options = filteredOptions.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      onOptionSubmit={(optionValue) => {
+        setValue(optionValue);
+        combobox.closeDropdown();
+      }}
+      store={combobox}
+    >
+      <Combobox.Target>
+        <TextInput
+          label="Pick value or type anything"
+          placeholder="Pick value or type anything"
+          value={value}
+          onChange={(event) => {
+            setValue(event.currentTarget.value);
+            combobox.openDropdown();
+            combobox.updateSelectedOptionIndex();
+          }}
+          onClick={() => combobox.openDropdown()}
+          onFocus={() => combobox.openDropdown()}
+          onBlur={() => combobox.closeDropdown()}
+        />
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          {options.length === 0 ? <Combobox.Empty>Nothing found</Combobox.Empty> : options}
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+
+Example of using Combobox.Target with Button component:
+
+Selected item: Nothing selected
+Pick item
+Demo.tsx
+import { useState } from 'react';
+import { Button, Combobox, useCombobox, Text, Box } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <>
+      <Box mb="xs">
+        <Text span size="sm" c="dimmed">
+          Selected item:{' '}
+        </Text>
+
+        <Text span size="sm">
+          {selectedItem || 'Nothing selected'}
+        </Text>
+      </Box>
+
+      <Combobox
+        store={combobox}
+        width={250}
+        position="bottom-start"
+        withArrow
+        onOptionSubmit={(val) => {
+          setSelectedItem(val);
+          combobox.closeDropdown();
+        }}
+      >
+        <Combobox.Target>
+          <Button onClick={() => combobox.toggleDropdown()}>Pick item</Button>
+        </Combobox.Target>
+
+        <Combobox.Dropdown>
+          <Combobox.Options>{options}</Combobox.Options>
+        </Combobox.Dropdown>
+      </Combobox>
+    </>
+  );
+}
+Expand code
+Split events and dropdown targets
+
+In some cases, you might need to use different elements as an events target and as a dropdown. Use Combobox.EventsTarget to add aria-* attributes and keyboard event handlers, and Combobox.DropdownTarget to position the dropdown relative to the target.
+
+You can have as many Combobox.EventsTarget as you need, but only one Combobox.DropdownTarget per Combobox.
+
+Example of using Combobox.EventsTarget and Combobox.DropdownTarget with PillsInput component to create a searchable multiselect component:
+
+Demo.tsx
+import { useState } from 'react';
+import { PillsInput, Pill, Combobox, CheckIcon, Group, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+    onDropdownOpen: () => combobox.updateSelectedOptionIndex('active'),
+  });
+
+  const [search, setSearch] = useState('');
+  const [value, setValue] = useState<string[]>([]);
+
+  const handleValueSelect = (val: string) =>
+    setValue((current) =>
+      current.includes(val) ? current.filter((v) => v !== val) : [...current, val]
+    );
+
+  const handleValueRemove = (val: string) =>
+    setValue((current) => current.filter((v) => v !== val));
+
+  const values = value.map((item) => (
+    <Pill key={item} withRemoveButton onRemove={() => handleValueRemove(item)}>
+      {item}
+    </Pill>
+  ));
+
+  const options = groceries
+    .filter((item) => item.toLowerCase().includes(search.trim().toLowerCase()))
+    .map((item) => (
+      <Combobox.Option value={item} key={item} active={value.includes(item)}>
+        <Group gap="sm">
+          {value.includes(item) ? <CheckIcon size={12} /> : null}
+          <span>{item}</span>
+        </Group>
+      </Combobox.Option>
+    ));
+
+  return (
+    <Combobox store={combobox} onOptionSubmit={handleValueSelect}>
+      <Combobox.DropdownTarget>
+        <PillsInput onClick={() => combobox.openDropdown()}>
+          <Pill.Group>
+            {values}
+
+            <Combobox.EventsTarget>
+              <PillsInput.Field
+                onFocus={() => combobox.openDropdown()}
+                onBlur={() => combobox.closeDropdown()}
+                value={search}
+                placeholder="Search values"
+                onChange={(event) => {
+                  combobox.updateSelectedOptionIndex();
+                  setSearch(event.currentTarget.value);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === 'Backspace' && search.length === 0) {
+                    event.preventDefault();
+                    handleValueRemove(value[value.length - 1]);
+                  }
+                }}
+              />
+            </Combobox.EventsTarget>
+          </Pill.Group>
+        </PillsInput>
+      </Combobox.DropdownTarget>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          {options.length > 0 ? options : <Combobox.Empty>Nothing found...</Combobox.Empty>}
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Update selected option index
+
+updateSelectedOptionIndex handler is required to be called when options list changes. Usually, the options list changes when options are filtered based on the search query. In this case, you need to call updateSelectedOptionIndex in onChange handler of the search input.
+
+Example of using updateSelectedOptionIndex handler in searchable select component:
+
+Demo.tsx
+import { useState } from 'react';
+import { InputBase, Combobox, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+  const [search, setSearch] = useState('');
+
+  const shouldFilterOptions = groceries.every((item) => item !== search);
+  const filteredOptions = shouldFilterOptions
+    ? groceries.filter((item) => item.toLowerCase().includes(search.toLowerCase().trim()))
+    : groceries;
+
+  const options = filteredOptions.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        setSearch(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.openDropdown()}
+          onFocus={() => combobox.openDropdown()}
+          onBlur={() => {
+            combobox.closeDropdown();
+            setSearch(value || '');
+          }}
+          placeholder="Search value"
+          value={search}
+          onChange={(event) => {
+            combobox.updateSelectedOptionIndex();
+            setSearch(event.currentTarget.value);
+          }}
+        />
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          {options.length > 0 ? options : <Combobox.Empty>Nothing found</Combobox.Empty>}
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Search input
+
+If you prefer search input inside the dropdown, use Combobox.Search component. To focus the search input, call combobox.focusSearchInput, usually it is done when the dropdown is opened. To prevent focus loss after the dropdown is closed, call combobox.focusTarget:
+
+Selected item: Nothing selected
+Pick item
+Demo.tsx
+import { useState } from 'react';
+import { Button, Combobox, useCombobox, Text, Box } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const [search, setSearch] = useState('');
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  const combobox = useCombobox({
+    onDropdownClose: () => {
+      combobox.resetSelectedOption();
+      combobox.focusTarget();
+      setSearch('');
+    },
+
+    onDropdownOpen: () => {
+      combobox.focusSearchInput();
+    },
+  });
+
+  const options = groceries
+    .filter((item) => item.toLowerCase().includes(search.toLowerCase().trim()))
+    .map((item) => (
+      <Combobox.Option value={item} key={item}>
+        {item}
+      </Combobox.Option>
+    ));
+
+  return (
+    <>
+      <Box mb="xs">
+        <Text span size="sm" c="dimmed">
+          Selected item:{' '}
+        </Text>
+
+        <Text span size="sm">
+          {selectedItem || 'Nothing selected'}
+        </Text>
+      </Box>
+
+      <Combobox
+        store={combobox}
+        width={250}
+        position="bottom-start"
+        withArrow
+        onOptionSubmit={(val) => {
+          setSelectedItem(val);
+          combobox.closeDropdown();
+        }}
+      >
+        <Combobox.Target withAriaAttributes={false}>
+          <Button onClick={() => combobox.toggleDropdown()}>Pick item</Button>
+        </Combobox.Target>
+
+        <Combobox.Dropdown>
+          <Combobox.Search
+            value={search}
+            onChange={(event) => setSearch(event.currentTarget.value)}
+            placeholder="Search groceries"
+          />
+          <Combobox.Options>
+            {options.length > 0 ? options : <Combobox.Empty>Nothing found</Combobox.Empty>}
+          </Combobox.Options>
+        </Combobox.Dropdown>
+      </Combobox>
+    </>
+  );
+}
+Expand code
+Select first option
+
+Use combobox.selectFirstOption function to select the first option. It is useful if you want to select the first option when user searching for options in the list. If there are no options available, it will do nothing.
+
+Pick value or type anything
+Demo.tsx
+import { useState, useEffect } from 'react';
+import { Combobox, TextInput, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState('');
+  const shouldFilterOptions = !groceries.some((item) => item === value);
+  const filteredOptions = shouldFilterOptions
+    ? groceries.filter((item) => item.toLowerCase().includes(value.toLowerCase().trim()))
+    : groceries;
+
+  const options = filteredOptions.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  useEffect(() => {
+    // we need to wait for options to render before we can select first one
+    combobox.selectFirstOption();
+  }, [value]);
+
+  return (
+    <Combobox
+      onOptionSubmit={(optionValue) => {
+        setValue(optionValue);
+        combobox.closeDropdown();
+      }}
+      store={combobox}
+    >
+      <Combobox.Target>
+        <TextInput
+          label="Pick value or type anything"
+          placeholder="Pick value or type anything"
+          value={value}
+          onChange={(event) => {
+            setValue(event.currentTarget.value);
+            combobox.openDropdown();
+          }}
+          onClick={() => combobox.openDropdown()}
+          onFocus={() => combobox.openDropdown()}
+          onBlur={() => combobox.closeDropdown()}
+        />
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          {options.length === 0 ? <Combobox.Empty>Nothing found</Combobox.Empty> : options}
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Active option
+
+Set active prop on Combobox.Option component to mark it as active. By default, an active option does not have any styles, you can use data-combobox-active data attribute to style it.
+
+combobox.selectActiveOption function selects active option. Usually, it is called when the dropdown is opened:
+
+🥦 Broccoli
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox, CheckIcon, Group } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+    onDropdownOpen: (eventSource) => {
+      if (eventSource === 'keyboard') {
+        combobox.selectActiveOption();
+      } else {
+        combobox.updateSelectedOptionIndex('active');
+      }
+    },
+  });
+
+  const [value, setValue] = useState<string | null>('🥦 Broccoli');
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item} active={item === value}>
+      <Group gap="xs">
+        {item === value && <CheckIcon size={12} />}
+        <span>{item}</span>
+      </Group>
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      resetSelectionOnOptionHover
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.updateSelectedOptionIndex('active');
+      }}
+    >
+      <Combobox.Target targetType="button">
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>{options}</Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Options groups
+
+Render Combobox.Option components inside Combobox.Group to create options group. Combobox.Group label will be automatically hidden if the group does not have any children.
+
+Pick value
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox } from '@mantine/core';
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+
+  return (
+    <Combobox
+      store={combobox}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          <Combobox.Group label="Fruits">
+            <Combobox.Option value="🍎 Apples">🍎 Apples</Combobox.Option>
+            <Combobox.Option value="🍌 Bananas">🍌 Bananas</Combobox.Option>
+            <Combobox.Option value="🍇 Grape">🍇 Grape</Combobox.Option>
+          </Combobox.Group>
+
+          <Combobox.Group label="Vegetables">
+            <Combobox.Option value="🥦 Broccoli">🥦 Broccoli</Combobox.Option>
+            <Combobox.Option value="🥕 Carrots">🥕 Carrots</Combobox.Option>
+            <Combobox.Option value="🥬 Lettuce">🥬 Lettuce</Combobox.Option>
+          </Combobox.Group>
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Scrollable list
+
+Set max-height style on either Combobox.Dropdown or Combobox.Options to make the options list scrollable. You can use mah style prop to set max-height.
+
+Pick value
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox } from '@mantine/core';
+
+const groceries = [
+  '🍎 Apples',
+  '🍌 Bananas',
+  '🥦 Broccoli',
+  '🥕 Carrots',
+  '🍫 Chocolate',
+  '🍇 Grapes',
+  '🍋 Lemon',
+  '🥬 Lettuce',
+  '🍄 Mushrooms',
+  '🍊 Oranges',
+  '🥔 Potatoes',
+  '🍅 Tomatoes',
+  '🥚 Eggs',
+  '🥛 Milk',
+  '🍞 Bread',
+  '🍗 Chicken',
+  '🍔 Hamburger',
+  '🧀 Cheese',
+  '🥩 Steak',
+  '🍟 French Fries',
+  '🍕 Pizza',
+  '🥦 Cauliflower',
+  '🥜 Peanuts',
+  '🍦 Ice Cream',
+  '🍯 Honey',
+  '🥖 Baguette',
+  '🍣 Sushi',
+  '🥝 Kiwi',
+  '🍓 Strawberries',
+];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options mah={200} style={{ overflowY: 'auto' }}>
+          {options}
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Scrollable list with ScrollArea
+
+You can also use ScrollArea or ScrollArea.Autosize components instead of native scrollbars:
+
+Pick value
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox, ScrollArea } from '@mantine/core';
+
+const groceries = [
+  '🍎 Apples',
+  '🍌 Bananas',
+  '🥦 Broccoli',
+  '🥕 Carrots',
+  '🍫 Chocolate',
+  '🍇 Grapes',
+  '🍋 Lemon',
+  '🥬 Lettuce',
+  '🍄 Mushrooms',
+  '🍊 Oranges',
+  '🥔 Potatoes',
+  '🍅 Tomatoes',
+  '🥚 Eggs',
+  '🥛 Milk',
+  '🍞 Bread',
+  '🍗 Chicken',
+  '🍔 Hamburger',
+  '🧀 Cheese',
+  '🥩 Steak',
+  '🍟 French Fries',
+  '🍕 Pizza',
+  '🥦 Cauliflower',
+  '🥜 Peanuts',
+  '🍦 Ice Cream',
+  '🍯 Honey',
+  '🥖 Baguette',
+  '🍣 Sushi',
+  '🥝 Kiwi',
+  '🍓 Strawberries',
+];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>
+          <ScrollArea.Autosize type="scroll" mah={200}>
+            {options}
+          </ScrollArea.Autosize>
+        </Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Hide dropdown
+
+Set hidden prop on Combobox.Dropdown to hide the dropdown. For example, it can be useful when you want to show the dropdown only when there is at least one option available:
+
+Pick value or type anything
+Demo.tsx
+import { useState } from 'react';
+import { Combobox, TextInput, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox();
+  const [value, setValue] = useState('');
+  const shouldFilterOptions = !groceries.some((item) => item === value);
+  const filteredOptions = shouldFilterOptions
+    ? groceries.filter((item) => item.toLowerCase().includes(value.toLowerCase().trim()))
+    : groceries;
+
+  const options = filteredOptions.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      onOptionSubmit={(optionValue) => {
+        setValue(optionValue);
+        combobox.closeDropdown();
+      }}
+      store={combobox}
+    >
+      <Combobox.Target>
+        <TextInput
+          label="Pick value or type anything"
+          placeholder="Pick value or type anything"
+          value={value}
+          onChange={(event) => {
+            setValue(event.currentTarget.value);
+            combobox.openDropdown();
+          }}
+          onClick={() => combobox.openDropdown()}
+          onFocus={() => combobox.openDropdown()}
+          onBlur={() => combobox.closeDropdown()}
+        />
+      </Combobox.Target>
+
+      <Combobox.Dropdown hidden={options.length === 0}>
+        <Combobox.Options>{options}</Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Control dropdown opened state
+
+To control the dropdown opened state, pass opened to useCombobox hook:
+
+Toggle dropdown
+Autocomplete
+
+Dropdown is opened/closed when button is clicked
+
+Demo.tsx
+import { useState } from 'react';
+import { TextInput, Button, Combobox, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const [opened, setOpened] = useState(false);
+  const combobox = useCombobox({ opened });
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <>
+      <Button mb="md" onClick={() => setOpened((o) => !o)}>
+        Toggle dropdown
+      </Button>
+
+      <Combobox store={combobox}>
+        <Combobox.Target>
+          <TextInput
+            label="Autocomplete"
+            description="Dropdown is opened/closed when button is clicked"
+            placeholder="Click button to toggle dropdown"
+          />
+        </Combobox.Target>
+
+        <Combobox.Dropdown>
+          <Combobox.Options>{options}</Combobox.Options>
+        </Combobox.Dropdown>
+      </Combobox>
+    </>
+  );
+}
+Expand code
+Popover props
+
+Combobox supports most of Popover props. For example, you can control dropdown position with position prop and disable Floating UI middlewares with middlewares prop:
+
+Pick value
+Demo.tsx
+import { useState } from 'react';
+import { Input, InputBase, Combobox, useCombobox } from '@mantine/core';
+
+const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
+
+function Demo() {
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  const [value, setValue] = useState<string | null>(null);
+
+  const options = groceries.map((item) => (
+    <Combobox.Option value={item} key={item}>
+      {item}
+    </Combobox.Option>
+  ));
+
+  return (
+    <Combobox
+      store={combobox}
+      position="bottom"
+      middlewares={{ flip: false, shift: false }}
+      onOptionSubmit={(val) => {
+        setValue(val);
+        combobox.closeDropdown();
+      }}
+    >
+      <Combobox.Target>
+        <InputBase
+          component="button"
+          type="button"
+          pointer
+          rightSection={<Combobox.Chevron />}
+          rightSectionPointerEvents="none"
+          onClick={() => combobox.toggleDropdown()}
+        >
+          {value || <Input.Placeholder>Pick value</Input.Placeholder>}
+        </InputBase>
+      </Combobox.Target>
+
+      <Combobox.Dropdown>
+        <Combobox.Options>{options}</Combobox.Options>
+      </Combobox.Dropdown>
+    </Combobox>
+  );
+}
+Expand code
+Without dropdown
+
+You can use Combobox without dropdown. To do so, use Combobox.EventsTarget instead of Combobox.Target:
+
+First
+Second
+Third
+Demo.tsx
+import { useState } from 'react';
+import { Combobox, TextInput } from '@mantine/core';
+
+function Demo() {
+  const [value, setValue] = useState('');
+
+  return (
+    <Combobox onOptionSubmit={setValue}>
+      <Combobox.EventsTarget>
+        <TextInput
+          placeholder="Pick value"
+          value={value}
+          onChange={(event) => setValue(event.currentTarget.value)}
+        />
+      </Combobox.EventsTarget>
+
+      <Combobox.Options mt="sm">
+        <Combobox.Option value="First">First</Combobox.Option>
+        <Combobox.Option value="Second">Second</Combobox.Option>
+        <Combobox.Option value="Third">Third</Combobox.Option>
+      </Combobox.Options>
+    </Combobox>
+  );
+}
+Expand code
+Styles API
+
+Combobox supports Styles API, you can add styles to any inner element of the component withclassNames prop. Follow Styles API documentation to learn more.
+
+Component Styles API
+
+Hover over selectors to highlight corresponding elements
+
+options
+
+`Combobox.Options` component
+
+dropdown
+
+`Combobox.Dropdown` component
+
+option
+
+`Combobox.Option` component
+
+search
+
+`Combobox.Search` input
+
+empty
+
+`Combobox.Empty` component
+
+header
+
+`Combobox.Header` component
+
+footer
+
+`Combobox.Footer` component
+
+group
+
+`Combobox.Group` component
+
+groupLabel
+
+Label of `Combobox.Group` component
+
+Demo.module.css
+Demo.tsx
+/*
+ * Hover over selectors to apply outline styles
+ *
+ */
+
+Previous
+
+Autocomplete
+
+Next
+
+MultiSelect
+
+Welcome to Mantine, React components library that you always wished for
+
+Build fully functional accessible web applications faster than ever
+
+About
+
+Contribute
+About Mantine
+Changelog
+Releases
+
+Community
+
+Chat on Discord
+Follow on X
+Follow on Github
+GitHub discussions
+
+Project
+
+Mantine UI
+Documentation
+Github organization
+npm organization
+
+Built by Vitaly Rtishchev and these awesome people
+
+Join Discord community
+Follow Mantine on X
+Combobox header
+First group
+First
+Second
+Second group
+Third
+Fourth
+Third group
+Nothing found in this group...
+Combobox footer [Metadata: {'url': 'https://mantine.dev/core/combobox/'}]
+==================================================
+* Welcome to Mantine, React components library that you always wished for
+
+Search
+
+Ctrl + K
+
+Getting started
+About Mantine
+API Overview
+Contribute
+Colors generator
+Help center
+Mantine UI
+
+THEMING
+
+STYLES
+
+Styles overview
+Mantine styles
+CSS files list
+CSS modules
+PostCSS preset
+Usage with Emotion
+Usage with Sass
+Vanilla extract
+Global styles
+CSS variables
+CSS variables list
+rem, em and px units
+style prop
+Responsive styles
+Styles API
+data-* attributes
+Variants and sizes
+Unstyled / headless
+Style props
+Color functions
+RTL (right-to-left)
+Styles performance
+
+GUIDES
+
+MANTINE HOOKS
+
+MANTINE FORM
+
+MANTINE CORE
+
+MANTINE DATES
+
+MANTINE CHARTS
+
+EXTENSIONS
+
+CHANGELOG
+
+Default CSS variables list
+
+This page contains a list of all Mantine CSS variables that are generated from default theme.
+
+CSS variables not depending on color scheme
+--mantine-scale	1	
+--mantine-cursor-type	default	
+--mantine-color-scheme	light dark	
+--mantine-webkit-font-smoothing	antialiased	
+--mantine-moz-font-smoothing	grayscale	
+--mantine-color-white	#fff	
+
+--mantine-color-black	#000	
+
+--mantine-line-height	1.55	
+--mantine-font-family	-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji	
+--mantine-font-family-monospace	ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace	
+--mantine-font-family-headings	-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji	
+--mantine-heading-font-weight	700	
+--mantine-heading-text-wrap	wrap	
+--mantine-radius-default	0.25rem	
+--mantine-primary-color-filled	var(--mantine-color-blue-filled)	
+
+--mantine-primary-color-filled-hover	var(--mantine-color-blue-filled-hover)	
+
+--mantine-primary-color-light	var(--mantine-color-blue-light)	
+
+--mantine-primary-color-light-hover	var(--mantine-color-blue-light-hover)	
+
+--mantine-primary-color-light-color	var(--mantine-color-blue-light-color)	
+
+--mantine-breakpoint-xs	36em	
+--mantine-breakpoint-sm	48em	
+--mantine-breakpoint-md	62em	
+--mantine-breakpoint-lg	75em	
+--mantine-breakpoint-xl	88em	
+--mantine-spacing-xs	0.625rem	
+--mantine-spacing-sm	0.75rem	
+--mantine-spacing-md	1rem	
+--mantine-spacing-lg	1.25rem	
+--mantine-spacing-xl	2rem	
+--mantine-font-size-xs	0.75rem	
+--mantine-font-size-sm	0.875rem	
+--mantine-font-size-md	1rem	
+--mantine-font-size-lg	1.125rem	
+--mantine-font-size-xl	1.25rem	
+--mantine-line-height-xs	1.4	
+--mantine-line-height-sm	1.45	
+--mantine-line-height-md	1.55	
+--mantine-line-height-lg	1.6	
+--mantine-line-height-xl	1.65	
+--mantine-shadow-xs	0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)	
+--mantine-shadow-sm	0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem	
+--mantine-shadow-md	0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem	
+--mantine-shadow-lg	0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem	
+--mantine-shadow-xl	0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem	
+--mantine-radius-xs	0.125rem	
+--mantine-radius-sm	0.25rem	
+--mantine-radius-md	0.5rem	
+--mantine-radius-lg	1rem	
+--mantine-radius-xl	2rem	
+--mantine-primary-color-0	var(--mantine-color-blue-0)	
+
+--mantine-primary-color-1	var(--mantine-color-blue-1)	
+
+--mantine-primary-color-2	var(--mantine-color-blue-2)	
+
+--mantine-primary-color-3	var(--mantine-color-blue-3)	
+
+--mantine-primary-color-4	var(--mantine-color-blue-4)	
+
+--mantine-primary-color-5	var(--mantine-color-blue-5)	
+
+--mantine-primary-color-6	var(--mantine-color-blue-6)	
+
+--mantine-primary-color-7	var(--mantine-color-blue-7)	
+
+--mantine-primary-color-8	var(--mantine-color-blue-8)	
+
+--mantine-primary-color-9	var(--mantine-color-blue-9)	
+
+--mantine-color-dark-0	#C9C9C9	
+
+--mantine-color-dark-1	#b8b8b8	
+
+--mantine-color-dark-2	#828282	
+
+--mantine-color-dark-3	#696969	
+
+--mantine-color-dark-4	#424242	
+
+--mantine-color-dark-5	#3b3b3b	
+
+--mantine-color-dark-6	#2e2e2e	
+
+--mantine-color-dark-7	#242424	
+
+--mantine-color-dark-8	#1f1f1f	
+
+--mantine-color-dark-9	#141414	
+
+--mantine-color-gray-0	#f8f9fa	
+
+--mantine-color-gray-1	#f1f3f5	
+
+--mantine-color-gray-2	#e9ecef	
+
+--mantine-color-gray-3	#dee2e6	
+
+--mantine-color-gray-4	#ced4da	
+
+--mantine-color-gray-5	#adb5bd	
+
+--mantine-color-gray-6	#868e96	
+
+--mantine-color-gray-7	#495057	
+
+--mantine-color-gray-8	#343a40	
+
+--mantine-color-gray-9	#212529	
+
+--mantine-color-red-0	#fff5f5	
+
+--mantine-color-red-1	#ffe3e3	
+
+--mantine-color-red-2	#ffc9c9	
+
+--mantine-color-red-3	#ffa8a8	
+
+--mantine-color-red-4	#ff8787	
+
+--mantine-color-red-5	#ff6b6b	
+
+--mantine-color-red-6	#fa5252	
+
+--mantine-color-red-7	#f03e3e	
+
+--mantine-color-red-8	#e03131	
+
+--mantine-color-red-9	#c92a2a	
+
+--mantine-color-pink-0	#fff0f6	
+
+--mantine-color-pink-1	#ffdeeb	
+
+--mantine-color-pink-2	#fcc2d7	
+
+--mantine-color-pink-3	#faa2c1	
+
+--mantine-color-pink-4	#f783ac	
+
+--mantine-color-pink-5	#f06595	
+
+--mantine-color-pink-6	#e64980	
+
+--mantine-color-pink-7	#d6336c	
+
+--mantine-color-pink-8	#c2255c	
+
+--mantine-color-pink-9	#a61e4d	
+
+--mantine-color-grape-0	#f8f0fc	
+
+--mantine-color-grape-1	#f3d9fa	
+
+--mantine-color-grape-2	#eebefa	
+
+--mantine-color-grape-3	#e599f7	
+
+--mantine-color-grape-4	#da77f2	
+
+--mantine-color-grape-5	#cc5de8	
+
+--mantine-color-grape-6	#be4bdb	
+
+--mantine-color-grape-7	#ae3ec9	
+
+--mantine-color-grape-8	#9c36b5	
+
+--mantine-color-grape-9	#862e9c	
+
+--mantine-color-violet-0	#f3f0ff	
+
+--mantine-color-violet-1	#e5dbff	
+
+--mantine-color-violet-2	#d0bfff	
+
+--mantine-color-violet-3	#b197fc	
+
+--mantine-color-violet-4	#9775fa	
+
+--mantine-color-violet-5	#845ef7	
+
+--mantine-color-violet-6	#7950f2	
+
+--mantine-color-violet-7	#7048e8	
+
+--mantine-color-violet-8	#6741d9	
+
+--mantine-color-violet-9	#5f3dc4	
+
+--mantine-color-indigo-0	#edf2ff	
+
+--mantine-color-indigo-1	#dbe4ff	
+
+--mantine-color-indigo-2	#bac8ff	
+
+--mantine-color-indigo-3	#91a7ff	
+
+--mantine-color-indigo-4	#748ffc	
+
+--mantine-color-indigo-5	#5c7cfa	
+
+--mantine-color-indigo-6	#4c6ef5	
+
+--mantine-color-indigo-7	#4263eb	
+
+--mantine-color-indigo-8	#3b5bdb	
+
+--mantine-color-indigo-9	#364fc7	
+
+--mantine-color-blue-0	#e7f5ff	
+
+--mantine-color-blue-1	#d0ebff	
+
+--mantine-color-blue-2	#a5d8ff	
+
+--mantine-color-blue-3	#74c0fc	
+
+--mantine-color-blue-4	#4dabf7	
+
+--mantine-color-blue-5	#339af0	
+
+--mantine-color-blue-6	#228be6	
+
+--mantine-color-blue-7	#1c7ed6	
+
+--mantine-color-blue-8	#1971c2	
+
+--mantine-color-blue-9	#1864ab	
+
+--mantine-color-cyan-0	#e3fafc	
+
+--mantine-color-cyan-1	#c5f6fa	
+
+--mantine-color-cyan-2	#99e9f2	
+
+--mantine-color-cyan-3	#66d9e8	
+
+--mantine-color-cyan-4	#3bc9db	
+
+--mantine-color-cyan-5	#22b8cf	
+
+--mantine-color-cyan-6	#15aabf	
+
+--mantine-color-cyan-7	#1098ad	
+
+--mantine-color-cyan-8	#0c8599	
+
+--mantine-color-cyan-9	#0b7285	
+
+--mantine-color-teal-0	#e6fcf5	
+
+--mantine-color-teal-1	#c3fae8	
+
+--mantine-color-teal-2	#96f2d7	
+
+--mantine-color-teal-3	#63e6be	
+
+--mantine-color-teal-4	#38d9a9	
+
+--mantine-color-teal-5	#20c997	
+
+--mantine-color-teal-6	#12b886	
+
+--mantine-color-teal-7	#0ca678	
+
+--mantine-color-teal-8	#099268	
+
+--mantine-color-teal-9	#087f5b	
+
+--mantine-color-green-0	#ebfbee	
+
+--mantine-color-green-1	#d3f9d8	
+
+--mantine-color-green-2	#b2f2bb	
+
+--mantine-color-green-3	#8ce99a	
+
+--mantine-color-green-4	#69db7c	
+
+--mantine-color-green-5	#51cf66	
+
+--mantine-color-green-6	#40c057	
+
+--mantine-color-green-7	#37b24d	
+
+--mantine-color-green-8	#2f9e44	
+
+--mantine-color-green-9	#2b8a3e	
+
+--mantine-color-lime-0	#f4fce3	
+
+--mantine-color-lime-1	#e9fac8	
+
+--mantine-color-lime-2	#d8f5a2	
+
+--mantine-color-lime-3	#c0eb75	
+
+--mantine-color-lime-4	#a9e34b	
+
+--mantine-color-lime-5	#94d82d	
+
+--mantine-color-lime-6	#82c91e	
+
+--mantine-color-lime-7	#74b816	
+
+--mantine-color-lime-8	#66a80f	
+
+--mantine-color-lime-9	#5c940d	
+
+--mantine-color-yellow-0	#fff9db	
+
+--mantine-color-yellow-1	#fff3bf	
+
+--mantine-color-yellow-2	#ffec99	
+
+--mantine-color-yellow-3	#ffe066	
+
+--mantine-color-yellow-4	#ffd43b	
+
+--mantine-color-yellow-5	#fcc419	
+
+--mantine-color-yellow-6	#fab005	
+
+--mantine-color-yellow-7	#f59f00	
+
+--mantine-color-yellow-8	#f08c00	
+
+--mantine-color-yellow-9	#e67700	
+
+--mantine-color-orange-0	#fff4e6	
+
+--mantine-color-orange-1	#ffe8cc	
+
+--mantine-color-orange-2	#ffd8a8	
+
+--mantine-color-orange-3	#ffc078	
+
+--mantine-color-orange-4	#ffa94d	
+
+--mantine-color-orange-5	#ff922b	
+
+--mantine-color-orange-6	#fd7e14	
+
+--mantine-color-orange-7	#f76707	
+
+--mantine-color-orange-8	#e8590c	
+
+--mantine-color-orange-9	#d9480f	
+
+--mantine-h1-font-size	2.125rem	
+--mantine-h1-line-height	1.3	
+--mantine-h1-font-weight	700	
+--mantine-h2-font-size	1.625rem	
+--mantine-h2-line-height	1.35	
+--mantine-h2-font-weight	700	
+--mantine-h3-font-size	1.375rem	
+--mantine-h3-line-height	1.4	
+--mantine-h3-font-weight	700	
+--mantine-h4-font-size	1.125rem	
+--mantine-h4-line-height	1.45	
+--mantine-h4-font-weight	700	
+--mantine-h5-font-size	1rem	
+--mantine-h5-line-height	1.5	
+--mantine-h5-font-weight	700	
+--mantine-h6-font-size	0.875rem	
+--mantine-h6-line-height	1.5	
+--mantine-h6-font-weight	700	
+Light color scheme only variables
+--mantine-primary-color-contrast	var(--mantine-color-white)	
+
+--mantine-color-bright	var(--mantine-color-black)	
+
+--mantine-color-text	#000	
+
+--mantine-color-body	#fff	
+
+--mantine-color-error	var(--mantine-color-red-6)	
+
+--mantine-color-placeholder	var(--mantine-color-gray-5)	
+
+--mantine-color-anchor	var(--mantine-color-blue-6)	
+
+--mantine-color-default	var(--mantine-color-white)	
+
+--mantine-color-default-hover	var(--mantine-color-gray-0)	
+
+--mantine-color-default-color	var(--mantine-color-black)	
+
+--mantine-color-default-border	var(--mantine-color-gray-4)	
+
+--mantine-color-dimmed	var(--mantine-color-gray-6)	
+
+--mantine-color-dark-text	var(--mantine-color-dark-filled)	
+
+--mantine-color-dark-filled	var(--mantine-color-dark-6)	
+
+--mantine-color-dark-filled-hover	var(--mantine-color-dark-7)	
+
+--mantine-color-dark-light	rgba(46, 46, 46, 0.1)	
+
+--mantine-color-dark-light-hover	rgba(46, 46, 46, 0.12)	
+
+--mantine-color-dark-light-color	var(--mantine-color-dark-6)	
+
+--mantine-color-dark-outline	var(--mantine-color-dark-6)	
+
+--mantine-color-dark-outline-hover	rgba(46, 46, 46, 0.05)	
+
+--mantine-color-gray-text	var(--mantine-color-gray-filled)	
+
+--mantine-color-gray-filled	var(--mantine-color-gray-6)	
+
+--mantine-color-gray-filled-hover	var(--mantine-color-gray-7)	
+
+--mantine-color-gray-light	rgba(134, 142, 150, 0.1)	
+
+--mantine-color-gray-light-hover	rgba(134, 142, 150, 0.12)	
+
+--mantine-color-gray-light-color	var(--mantine-color-gray-6)	
+
+--mantine-color-gray-outline	var(--mantine-color-gray-6)	
+
+--mantine-color-gray-outline-hover	rgba(134, 142, 150, 0.05)	
+
+--mantine-color-red-text	var(--mantine-color-red-filled)	
+
+--mantine-color-red-filled	var(--mantine-color-red-6)	
+
+--mantine-color-red-filled-hover	var(--mantine-color-red-7)	
+
+--mantine-color-red-light	rgba(250, 82, 82, 0.1)	
+
+--mantine-color-red-light-hover	rgba(250, 82, 82, 0.12)	
+
+--mantine-color-red-light-color	var(--mantine-color-red-6)	
+
+--mantine-color-red-outline	var(--mantine-color-red-6)	
+
+--mantine-color-red-outline-hover	rgba(250, 82, 82, 0.05)	
+
+--mantine-color-pink-text	var(--mantine-color-pink-filled)	
+
+--mantine-color-pink-filled	var(--mantine-color-pink-6)	
+
+--mantine-color-pink-filled-hover	var(--mantine-color-pink-7)	
+
+--mantine-color-pink-light	rgba(230, 73, 128, 0.1)	
+
+--mantine-color-pink-light-hover	rgba(230, 73, 128, 0.12)	
+
+--mantine-color-pink-light-color	var(--mantine-color-pink-6)	
+
+--mantine-color-pink-outline	var(--mantine-color-pink-6)	
+
+--mantine-color-pink-outline-hover	rgba(230, 73, 128, 0.05)	
+
+--mantine-color-grape-text	var(--mantine-color-grape-filled)	
+
+--mantine-color-grape-filled	var(--mantine-color-grape-6)	
+
+--mantine-color-grape-filled-hover	var(--mantine-color-grape-7)	
+
+--mantine-color-grape-light	rgba(190, 75, 219, 0.1)	
+
+--mantine-color-grape-light-hover	rgba(190, 75, 219, 0.12)	
+
+--mantine-color-grape-light-color	var(--mantine-color-grape-6)	
+
+--mantine-color-grape-outline	var(--mantine-color-grape-6)	
+
+--mantine-color-grape-outline-hover	rgba(190, 75, 219, 0.05)	
+
+--mantine-color-violet-text	var(--mantine-color-violet-filled)	
+
+--mantine-color-violet-filled	var(--mantine-color-violet-6)	
+
+--mantine-color-violet-filled-hover	var(--mantine-color-violet-7)	
+
+--mantine-color-violet-light	rgba(121, 80, 242, 0.1)	
+
+--mantine-color-violet-light-hover	rgba(121, 80, 242, 0.12)	
+
+--mantine-color-violet-light-color	var(--mantine-color-violet-6)	
+
+--mantine-color-violet-outline	var(--mantine-color-violet-6)	
+
+--mantine-color-violet-outline-hover	rgba(121, 80, 242, 0.05)	
+
+--mantine-color-indigo-text	var(--mantine-color-indigo-filled)	
+
+--mantine-color-indigo-filled	var(--mantine-color-indigo-6)	
+
+--mantine-color-indigo-filled-hover	var(--mantine-color-indigo-7)	
+
+--mantine-color-indigo-light	rgba(76, 110, 245, 0.1)	
+
+--mantine-color-indigo-light-hover	rgba(76, 110, 245, 0.12)	
+
+--mantine-color-indigo-light-color	var(--mantine-color-indigo-6)	
+
+--mantine-color-indigo-outline	var(--mantine-color-indigo-6)	
+
+--mantine-color-indigo-outline-hover	rgba(76, 110, 245, 0.05)	
+
+--mantine-color-blue-text	var(--mantine-color-blue-filled)	
+
+--mantine-color-blue-filled	var(--mantine-color-blue-6)	
+
+--mantine-color-blue-filled-hover	var(--mantine-color-blue-7)	
+
+--mantine-color-blue-light	rgba(34, 139, 230, 0.1)	
+
+--mantine-color-blue-light-hover	rgba(34, 139, 230, 0.12)	
+
+--mantine-color-blue-light-color	var(--mantine-color-blue-6)	
+
+--mantine-color-blue-outline	var(--mantine-color-blue-6)	
+
+--mantine-color-blue-outline-hover	rgba(34, 139, 230, 0.05)	
+
+--mantine-color-cyan-text	var(--mantine-color-cyan-filled)	
+
+--mantine-color-cyan-filled	var(--mantine-color-cyan-6)	
+
+--mantine-color-cyan-filled-hover	var(--mantine-color-cyan-7)	
+
+--mantine-color-cyan-light	rgba(21, 170, 191, 0.1)	
+
+--mantine-color-cyan-light-hover	rgba(21, 170, 191, 0.12)	
+
+--mantine-color-cyan-light-color	var(--mantine-color-cyan-6)	
+
+--mantine-color-cyan-outline	var(--mantine-color-cyan-6)	
+
+--mantine-color-cyan-outline-hover	rgba(21, 170, 191, 0.05)	
+
+--mantine-color-teal-text	var(--mantine-color-teal-filled)	
+
+--mantine-color-teal-filled	var(--mantine-color-teal-6)	
+
+--mantine-color-teal-filled-hover	var(--mantine-color-teal-7)	
+
+--mantine-color-teal-light	rgba(18, 184, 134, 0.1)	
+
+--mantine-color-teal-light-hover	rgba(18, 184, 134, 0.12)	
+
+--mantine-color-teal-light-color	var(--mantine-color-teal-6)	
+
+--mantine-color-teal-outline	var(--mantine-color-teal-6)	
+
+--mantine-color-teal-outline-hover	rgba(18, 184, 134, 0.05)	
+
+--mantine-color-green-text	var(--mantine-color-green-filled)	
+
+--mantine-color-green-filled	var(--mantine-color-green-6)	
+
+--mantine-color-green-filled-hover	var(--mantine-color-green-7)	
+
+--mantine-color-green-light	rgba(64, 192, 87, 0.1)	
+
+--mantine-color-green-light-hover	rgba(64, 192, 87, 0.12)	
+
+--mantine-color-green-light-color	var(--mantine-color-green-6)	
+
+--mantine-color-green-outline	var(--mantine-color-green-6)	
+
+--mantine-color-green-outline-hover	rgba(64, 192, 87, 0.05)	
+
+--mantine-color-lime-text	var(--mantine-color-lime-filled)	
+
+--mantine-color-lime-filled	var(--mantine-color-lime-6)	
+
+--mantine-color-lime-filled-hover	var(--mantine-color-lime-7)	
+
+--mantine-color-lime-light	rgba(130, 201, 30, 0.1)	
+
+--mantine-color-lime-light-hover	rgba(130, 201, 30, 0.12)	
+
+--mantine-color-lime-light-color	var(--mantine-color-lime-6)	
+
+--mantine-color-lime-outline	var(--mantine-color-lime-6)	
+
+--mantine-color-lime-outline-hover	rgba(130, 201, 30, 0.05)	
+
+--mantine-color-yellow-text	var(--mantine-color-yellow-filled)	
+
+--mantine-color-yellow-filled	var(--mantine-color-yellow-6)	
+
+--mantine-color-yellow-filled-hover	var(--mantine-color-yellow-7)	
+
+--mantine-color-yellow-light	rgba(250, 176, 5, 0.1)	
+
+--mantine-color-yellow-light-hover	rgba(250, 176, 5, 0.12)	
+
+--mantine-color-yellow-light-color	var(--mantine-color-yellow-6)	
+
+--mantine-color-yellow-outline	var(--mantine-color-yellow-6)	
+
+--mantine-color-yellow-outline-hover	rgba(250, 176, 5, 0.05)	
+
+--mantine-color-orange-text	var(--mantine-color-orange-filled)	
+
+--mantine-color-orange-filled	var(--mantine-color-orange-6)	
+
+--mantine-color-orange-filled-hover	var(--mantine-color-orange-7)	
+
+--mantine-color-orange-light	rgba(253, 126, 20, 0.1)	
+
+--mantine-color-orange-light-hover	rgba(253, 126, 20, 0.12)	
+
+--mantine-color-orange-light-color	var(--mantine-color-orange-6)	
+
+--mantine-color-orange-outline	var(--mantine-color-orange-6)	
+
+--mantine-color-orange-outline-hover	rgba(253, 126, 20, 0.05)	
+Dark color scheme only variables
+--mantine-primary-color-contrast	var(--mantine-color-white)	
+
+--mantine-color-bright	var(--mantine-color-white)	
+
+--mantine-color-text	var(--mantine-color-dark-0)	
+
+--mantine-color-body	var(--mantine-color-dark-7)	
+
+--mantine-color-error	var(--mantine-color-red-8)	
+
+--mantine-color-placeholder	var(--mantine-color-dark-3)	
+
+--mantine-color-anchor	var(--mantine-color-blue-4)	
+
+--mantine-color-default	var(--mantine-color-dark-6)	
+
+--mantine-color-default-hover	var(--mantine-color-dark-5)	
+
+--mantine-color-default-color	var(--mantine-color-white)	
+
+--mantine-color-default-border	var(--mantine-color-dark-4)	
+
+--mantine-color-dimmed	var(--mantine-color-dark-2)	
+
+--mantine-color-dark-text	var(--mantine-color-dark-4)	
+
+--mantine-color-dark-filled	var(--mantine-color-dark-8)	
+
+--mantine-color-dark-filled-hover	var(--mantine-color-dark-9)	
+
+--mantine-color-dark-light	rgba(46, 46, 46, 0.15)	
+
+--mantine-color-dark-light-hover	rgba(46, 46, 46, 0.2)	
+
+--mantine-color-dark-light-color	var(--mantine-color-dark-3)	
+
+--mantine-color-dark-outline	var(--mantine-color-dark-4)	
+
+--mantine-color-dark-outline-hover	rgba(66, 66, 66, 0.05)	
+
+--mantine-color-gray-text	var(--mantine-color-gray-4)	
+
+--mantine-color-gray-filled	var(--mantine-color-gray-8)	
+
+--mantine-color-gray-filled-hover	var(--mantine-color-gray-9)	
+
+--mantine-color-gray-light	rgba(134, 142, 150, 0.15)	
+
+--mantine-color-gray-light-hover	rgba(134, 142, 150, 0.2)	
+
+--mantine-color-gray-light-color	var(--mantine-color-gray-3)	
+
+--mantine-color-gray-outline	var(--mantine-color-gray-4)	
+
+--mantine-color-gray-outline-hover	rgba(206, 212, 218, 0.05)	
+
+--mantine-color-red-text	var(--mantine-color-red-4)	
+
+--mantine-color-red-filled	var(--mantine-color-red-8)	
+
+--mantine-color-red-filled-hover	var(--mantine-color-red-9)	
+
+--mantine-color-red-light	rgba(250, 82, 82, 0.15)	
+
+--mantine-color-red-light-hover	rgba(250, 82, 82, 0.2)	
+
+--mantine-color-red-light-color	var(--mantine-color-red-3)	
+
+--mantine-color-red-outline	var(--mantine-color-red-4)	
+
+--mantine-color-red-outline-hover	rgba(255, 135, 135, 0.05)	
+
+--mantine-color-pink-text	var(--mantine-color-pink-4)	
+
+--mantine-color-pink-filled	var(--mantine-color-pink-8)	
+
+--mantine-color-pink-filled-hover	var(--mantine-color-pink-9)	
+
+--mantine-color-pink-light	rgba(230, 73, 128, 0.15)	
+
+--mantine-color-pink-light-hover	rgba(230, 73, 128, 0.2)	
+
+--mantine-color-pink-light-color	var(--mantine-color-pink-3)	
+
+--mantine-color-pink-outline	var(--mantine-color-pink-4)	
+
+--mantine-color-pink-outline-hover	rgba(247, 131, 172, 0.05)	
+
+--mantine-color-grape-text	var(--mantine-color-grape-4)	
+
+--mantine-color-grape-filled	var(--mantine-color-grape-8)	
+
+--mantine-color-grape-filled-hover	var(--mantine-color-grape-9)	
+
+--mantine-color-grape-light	rgba(190, 75, 219, 0.15)	
+
+--mantine-color-grape-light-hover	rgba(190, 75, 219, 0.2)	
+
+--mantine-color-grape-light-color	var(--mantine-color-grape-3)	
+
+--mantine-color-grape-outline	var(--mantine-color-grape-4)	
+
+--mantine-color-grape-outline-hover	rgba(218, 119, 242, 0.05)	
+
+--mantine-color-violet-text	var(--mantine-color-violet-4)	
+
+--mantine-color-violet-filled	var(--mantine-color-violet-8)	
+
+--mantine-color-violet-filled-hover	var(--mantine-color-violet-9)	
+
+--mantine-color-violet-light	rgba(121, 80, 242, 0.15)	
+
+--mantine-color-violet-light-hover	rgba(121, 80, 242, 0.2)	
+
+--mantine-color-violet-light-color	var(--mantine-color-violet-3)	
+
+--mantine-color-violet-outline	var(--mantine-color-violet-4)	
+
+--mantine-color-violet-outline-hover	rgba(151, 117, 250, 0.05)	
+
+--mantine-color-indigo-text	var(--mantine-color-indigo-4)	
+
+--mantine-color-indigo-filled	var(--mantine-color-indigo-8)	
+
+--mantine-color-indigo-filled-hover	var(--mantine-color-indigo-9)	
+
+--mantine-color-indigo-light	rgba(76, 110, 245, 0.15)	
+
+--mantine-color-indigo-light-hover	rgba(76, 110, 245, 0.2)	
+
+--mantine-color-indigo-light-color	var(--mantine-color-indigo-3)	
+
+--mantine-color-indigo-outline	var(--mantine-color-indigo-4)	
+
+--mantine-color-indigo-outline-hover	rgba(116, 143, 252, 0.05)	
+
+--mantine-color-blue-text	var(--mantine-color-blue-4)	
+
+--mantine-color-blue-filled	var(--mantine-color-blue-8)	
+
+--mantine-color-blue-filled-hover	var(--mantine-color-blue-9)	
+
+--mantine-color-blue-light	rgba(34, 139, 230, 0.15)	
+
+--mantine-color-blue-light-hover	rgba(34, 139, 230, 0.2)	
+
+--mantine-color-blue-light-color	var(--mantine-color-blue-3)	
+
+--mantine-color-blue-outline	var(--mantine-color-blue-4)	
+
+--mantine-color-blue-outline-hover	rgba(77, 171, 247, 0.05)	
+
+--mantine-color-cyan-text	var(--mantine-color-cyan-4)	
+
+--mantine-color-cyan-filled	var(--mantine-color-cyan-8)	
+
+--mantine-color-cyan-filled-hover	var(--mantine-color-cyan-9)	
+
+--mantine-color-cyan-light	rgba(21, 170, 191, 0.15)	
+
+--mantine-color-cyan-light-hover	rgba(21, 170, 191, 0.2)	
+
+--mantine-color-cyan-light-color	var(--mantine-color-cyan-3)	
+
+--mantine-color-cyan-outline	var(--mantine-color-cyan-4)	
+
+--mantine-color-cyan-outline-hover	rgba(59, 201, 219, 0.05)	
+
+--mantine-color-teal-text	var(--mantine-color-teal-4)	
+
+--mantine-color-teal-filled	var(--mantine-color-teal-8)	
+
+--mantine-color-teal-filled-hover	var(--mantine-color-teal-9)	
+
+--mantine-color-teal-light	rgba(18, 184, 134, 0.15)	
+
+--mantine-color-teal-light-hover	rgba(18, 184, 134, 0.2)	
+
+--mantine-color-teal-light-color	var(--mantine-color-teal-3)	
+
+--mantine-color-teal-outline	var(--mantine-color-teal-4)	
+
+--mantine-color-teal-outline-hover	rgba(56, 217, 169, 0.05)	
+
+--mantine-color-green-text	var(--mantine-color-green-4)	
+
+--mantine-color-green-filled	var(--mantine-color-green-8)	
+
+--mantine-color-green-filled-hover	var(--mantine-color-green-9)	
+
+--mantine-color-green-light	rgba(64, 192, 87, 0.15)	
+
+--mantine-color-green-light-hover	rgba(64, 192, 87, 0.2)	
+
+--mantine-color-green-light-color	var(--mantine-color-green-3)	
+
+--mantine-color-green-outline	var(--mantine-color-green-4)	
+
+--mantine-color-green-outline-hover	rgba(105, 219, 124, 0.05)	
+
+--mantine-color-lime-text	var(--mantine-color-lime-4)	
+
+--mantine-color-lime-filled	var(--mantine-color-lime-8)	
+
+--mantine-color-lime-filled-hover	var(--mantine-color-lime-9)	
+
+--mantine-color-lime-light	rgba(130, 201, 30, 0.15)	
+
+--mantine-color-lime-light-hover	rgba(130, 201, 30, 0.2)	
+
+--mantine-color-lime-light-color	var(--mantine-color-lime-3)	
+
+--mantine-color-lime-outline	var(--mantine-color-lime-4)	
+
+--mantine-color-lime-outline-hover	rgba(169, 227, 75, 0.05)	
+
+--mantine-color-yellow-text	var(--mantine-color-yellow-4)	
+
+--mantine-color-yellow-filled	var(--mantine-color-yellow-8)	
+
+--mantine-color-yellow-filled-hover	var(--mantine-color-yellow-9)	
+
+--mantine-color-yellow-light	rgba(250, 176, 5, 0.15)	
+
+--mantine-color-yellow-light-hover	rgba(250, 176, 5, 0.2)	
+
+--mantine-color-yellow-light-color	var(--mantine-color-yellow-3)	
+
+--mantine-color-yellow-outline	var(--mantine-color-yellow-4)	
+
+--mantine-color-yellow-outline-hover	rgba(255, 212, 59, 0.05)	
+
+--mantine-color-orange-text	var(--mantine-color-orange-4)	
+
+--mantine-color-orange-filled	var(--mantine-color-orange-8)	
+
+--mantine-color-orange-filled-hover	var(--mantine-color-orange-9)	
+
+--mantine-color-orange-light	rgba(253, 126, 20, 0.15)	
+
+--mantine-color-orange-light-hover	rgba(253, 126, 20, 0.2)	
+
+--mantine-color-orange-light-color	var(--mantine-color-orange-3)	
+
+--mantine-color-orange-outline	var(--mantine-color-orange-4)	
+
+--mantine-color-orange-outline-hover	rgba(255, 169, 77, 0.05)	
+
+Previous
+
+CSS variables
+
+Next
+
+rem, em and px units
+
+Welcome to Mantine, React components library that you always wished for
+
+Build fully functional accessible web applications faster than ever
+
+About
+
+Contribute
+About Mantine
+Changelog
+Releases
+
+Community
+
+Chat on Discord
+Follow on X
+Follow on Github
+GitHub discussions
+
+Project
+
+Mantine UI
+Documentation
+Github organization
+npm organization
+
+Built by Vitaly Rtishchev and these awesome people
+
+Join Discord community
+Follow Mantine on X [Metadata: {'url': 'https://mantine.dev/styles/css-variables-list/'}]
+==================================================
+* Welcome to Mantine, React components library that you always wished for
+
+Search
+
+Ctrl + K
+
+Getting started
+About Mantine
+API Overview
+Contribute
+Colors generator
+Help center
+Mantine UI
+
+THEMING
+
+STYLES
+
+GUIDES
+
+MANTINE HOOKS
+
+MANTINE FORM
+
+MANTINE CORE
+
+Layout
+
+AppShell
+AspectRatio
+Center
+Container
+Flex
+Grid
+Group
+SimpleGrid
+Space
+Stack
+
+Inputs
+
+Checkbox
+Chip
+ColorInput
+ColorPicker
+Fieldset
+FileInput
+Input
+JsonInput
+NativeSelect
+NumberInput
+PasswordInput
+PinInput
+Radio
+Rating
+SegmentedControl
+Slider
+Switch
+Textarea
+TextInput
+
+Combobox
+
+Autocomplete
+Combobox
+MultiSelect
+Pill
+PillsInput
+Select
+TagsInput
+
+Buttons
+
+ActionIcon
+Button
+CloseButton
+CopyButton
+FileButton
+UnstyledButton
+
+Navigation
+
+Anchor
+Breadcrumbs
+Burger
+NavLink
+Pagination
+Stepper
+Tabs
+Tree
+
+Feedback
+
+Alert
+Loader
+Notification
+Progress
+RingProgress
+SemiCircleProgress
+Skeleton
+
+Overlays
+
+Affix
+Dialog
+Drawer
+FloatingIndicator
+HoverCard
+LoadingOverlay
+Menu
+Modal
+Overlay
+Popover
+Tooltip
+
+Data Display
+
+Accordion
+Avatar
+BackgroundImage
+Badge
+Card
+ColorSwatch
+Image
+Indicator
+Kbd
+NumberFormatter
+Spoiler
+ThemeIcon
+Timeline
+
+Typography
+
+Blockquote
+Code
+Highlight
+List
+Mark
+Table
+Text
+Title
+TypographyStylesProvider
+
+Misc
+
+Box
+Collapse
+Divider
+FocusTrap
+Paper
+Portal
+ScrollArea
+Transition
+VisuallyHidden
+
+MANTINE DATES
+
+MANTINE CHARTS
+
+EXTENSIONS
+
+CHANGELOG
+
+Rating
+
+Pick and display rating
+
+Import
+
+import { Rating } from '@mantine/core';
+
+Source
+
+View source code
+
+Docs
+
+Edit this page
+
+Package
+
+@mantine/core
+Documentation
+Props
+Styles API
+Usage
+Color
+Size
+Count
+Highlight selected only
+Demo.tsx
+import { Rating } from '@mantine/core';
+
+function Demo() {
+  return <Rating defaultValue={2} />
+}
+Controlled
+import { useState } from 'react';
+import { Rating } from '@mantine/core';
+
+function Demo() {
+  const [value, setValue] = useState(0);
+  return <Rating value={value} onChange={setValue} />;
+}
+Read only
+Demo.tsx
+import { Rating } from '@mantine/core';
+
+function Demo() {
+  return <Rating value={3.5} fractions={2} readOnly />;
+}
+Fractions
+Fractions: 2
+Fractions: 3
+Fractions: 4
+Demo.tsx
+import { Rating, Group, Stack } from '@mantine/core';
+
+function Demo() {
+  return (
+    <Stack>
+      <Group>
+        <div>Fractions: 2</div>
+        <Rating fractions={2} defaultValue={1.5} />
+      </Group>
+      <Group>
+        <div>Fractions: 3</div>
+        <Rating fractions={3} defaultValue={2.33333333} />
+      </Group>
+      <Group>
+        <div>Fractions: 4</div>
+        <Rating fractions={4} defaultValue={3.75} />
+      </Group>
+    </Stack>
+  );
+}
+Custom symbol
+Demo.tsx
+import { Rating } from '@mantine/core';
+import { IconSun, IconMoon } from '@tabler/icons-react';
+
+function Demo() {
+  return <Rating emptySymbol={<IconSun size="1rem" />} fullSymbol={<IconMoon size="1rem" />} />;
+}
+Symbols for each item
+Demo.tsx
+import { Rating, rem } from '@mantine/core';
+import {
+  IconMoodCry,
+  IconMoodSad,
+  IconMoodSmile,
+  IconMoodHappy,
+  IconMoodCrazyHappy,
+} from '@tabler/icons-react';
+
+const getIconStyle = (color?: string) => ({
+  width: rem(24),
+  height: rem(24),
+  color: color ? `var(--mantine-color-${color}-7)` : undefined,
+});
+
+const getEmptyIcon = (value: number) => {
+  const iconStyle = getIconStyle();
+
+  switch (value) {
+    case 1:
+      return <IconMoodCry style={iconStyle} />;
+    case 2:
+      return <IconMoodSad style={iconStyle} />;
+    case 3:
+      return <IconMoodSmile style={iconStyle} />;
+    case 4:
+      return <IconMoodHappy style={iconStyle} />;
+    case 5:
+      return <IconMoodCrazyHappy style={iconStyle} />;
+    default:
+      return null;
+  }
+};
+
+const getFullIcon = (value: number) => {
+  switch (value) {
+    case 1:
+      return <IconMoodCry style={getIconStyle('red')} />;
+    case 2:
+      return <IconMoodSad style={getIconStyle('orange')} />;
+    case 3:
+      return <IconMoodSmile style={getIconStyle('yellow')} />;
+    case 4:
+      return <IconMoodHappy style={getIconStyle('lime')} />;
+    case 5:
+      return <IconMoodCrazyHappy style={getIconStyle('green')} />;
+    default:
+      return null;
+  }
+};
+
+function Demo() {
+  return <Rating emptySymbol={getEmptyIcon} fullSymbol={getFullIcon} highlightSelectedOnly />;
+}
+
+Previous
+
+Radio
+
+Next
+
+SegmentedControl
+
+Welcome to Mantine, React components library that you always wished for
+
+Build fully functional accessible web applications faster than ever
+
+About
+
+Contribute
+About Mantine
+Changelog
+Releases
+
+Community
+
+Chat on Discord
+Follow on X
+Follow on Github
+GitHub discussions
+
+Project
+
+Mantine UI
+Documentation
+Github organization
+npm organization
+
+Built by Vitaly Rtishchev and these awesome people
+
+Join Discord community
+Follow Mantine on X [Metadata: {'url': 'https://mantine.dev/core/rating/'}]
+==================================================
+* Welcome to Mantine, React components library that you always wished for
+
+Search
+
+Ctrl + K
+
+Getting started
+About Mantine
+API Overview
+Contribute
+Colors generator
+Help center
+Mantine UI
+
+THEMING
+
+STYLES
+
+GUIDES
+
+MANTINE HOOKS
+
+MANTINE FORM
+
+use-form
+use-field
+Uncontrolled mode
+Form values
+getInputProps
+Form errors
+Form validation
+Form schema validation
+Form validators
+Nested fields
+Touched & dirty
+Form context
+Form actions
+Recipes
+
+MANTINE CORE
+
+MANTINE DATES
+
+MANTINE CHARTS
+
+EXTENSIONS
+
+CHANGELOG
+
+Recipes
+
+use-form examples
+
+Docs
+
+Edit this page
+
+Package
+
+@mantine/form
+Set initial values with async request
+Email
+I accept terms and conditions
+Demo.tsx
+import { useEffect } from 'react';
+import { useForm } from '@mantine/form';
+import { TextInput, Checkbox } from '@mantine/core';
+
+interface FormValues {
+  email: string;
+  terms: boolean;
+}
+
+function loadInitialValues(): Promise<FormValues> {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve({ email: 'test@email', terms: true }), 2000);
+  });
+}
+
+function Demo() {
+  const form = useForm<FormValues>({
+    mode: 'uncontrolled',
+    initialValues: { email: '', terms: false },
+  });
+
+  useEffect(() => {
+    loadInitialValues().then((values) => {
+      form.setValues(values);
+      form.resetDirty(values);
+    });
+  }, []);
+
+  return (
+    <form onSubmit={form.onSubmit(console.log)}>
+      <TextInput
+        label="Email"
+        placeholder="Email"
+        key={form.key('email')}
+        {...form.getInputProps('email')}
+      />
+      <Checkbox
+        mt="sm"
+        label="I accept terms and conditions"
+        key={form.key('terms')}
+        {...form.getInputProps('terms', { type: 'checkbox' })}
+      />
+    </form>
+  );
+}
+Save form values to local storage
+Name
+Occupation
+Demo.tsx
+import { useEffect } from 'react';
+import { useForm } from '@mantine/form';
+import { TextInput, Box } from '@mantine/core';
+
+function Demo() {
+  const form = useForm({
+    mode: 'uncontrolled',
+    initialValues: { name: '', occupation: '' },
+    onValuesChange: (values) => {
+      window.localStorage.setItem('user-form', JSON.stringify(values));
+    },
+  });
+
+  useEffect(() => {
+    const storedValue = window.localStorage.getItem('user-form');
+    if (storedValue) {
+      try {
+        form.setValues(JSON.parse(window.localStorage.getItem('user-form')!));
+      } catch (e) {
+        console.log('Failed to parse stored value');
+      }
+    }
+  }, []);
+
+  return (
+    <Box maw={340} mx="auto">
+      <TextInput
+        label="Name"
+        placeholder="Name"
+        key={form.key('name')}
+        {...form.getInputProps('name')}
+      />
+      <TextInput
+        mt="md"
+        label="Occupation"
+        placeholder="Occupation"
+        key={form.key('occupation')}
+        {...form.getInputProps('occupation')}
+      />
+    </Box>
+  );
+}
+List items reordering
+Add employee
+Demo.tsx
+import { Group, TextInput, Button, Center } from '@mantine/core';
+import { useForm } from '@mantine/form';
+import { randomId } from '@mantine/hooks';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
+import { IconGripVertical } from '@tabler/icons-react';
+
+function Demo() {
+  const form = useForm({
+    mode: 'uncontrolled',
+    initialValues: {
+      employees: [
+        { name: 'John Doe', email: 'john@mantine.dev', key: randomId() },
+        { name: 'Bill Love', email: 'bill@mantine.dev', key: randomId() },
+        { name: 'Nancy Eagle', email: 'nanacy@mantine.dev', key: randomId() },
+        { name: 'Lim Notch', email: 'lim@mantine.dev', key: randomId() },
+        { name: 'Susan Seven', email: 'susan@mantine.dev', key: randomId() },
+      ],
+    },
+  });
+
+  const fields = form.getValues().employees.map((item, index) => (
+    <Draggable key={item.key} index={index} draggableId={item.key}>
+      {(provided) => (
+        <Group ref={provided.innerRef} mt="xs" {...provided.draggableProps}>
+          <Center {...provided.dragHandleProps}>
+            <IconGripVertical size="1.2rem" />
+          </Center>
+          <TextInput
+            placeholder="John Doe"
+            key={form.key(`employees.${index}.name`)}
+            {...form.getInputProps(`employees.${index}.name`)}
+          />
+          <TextInput
+            placeholder="example@mail.com"
+            key={form.key(`employees.${index}.email`)}
+            {...form.getInputProps(`employees.${index}.email`)}
+          />
+        </Group>
+      )}
+    </Draggable>
+  ));
+
+  return (
+    <div>
+      <DragDropContext
+        onDragEnd={({ destination, source }) =>
+          destination?.index !== undefined && form.reorderListItem('employees', { from: source.index, to: destination.index })
+        }
+      >
+        <Droppable droppableId="dnd-list" direction="vertical">
+          {(provided) => (
+            <div {...provided.droppableProps} ref={provided.innerRef}>
+              {fields}
+              {provided.placeholder}
+            </div>
+          )}
+        </Droppable>
+      </DragDropContext>
+
+      <Group justify="center" mt="md">
+        <Button onClick={() => form.insertListItem('employees', { name: '', email: '', key: randomId() })}>
+          Add employee
+        </Button>
+      </Group>
+    </div>
+  );
+}
+Form with multiple steps
+1
+First step
+Profile settings
+2
+Second step
+Personal information
+3
+Final step
+Social media
+Username
+Password
+Next step
+Demo.tsx
+import { useState } from 'react';
+import { Stepper, Button, Group, TextInput, PasswordInput, Code } from '@mantine/core';
+import { useForm } from '@mantine/form';
+
+function Demo() {
+  const [active, setActive] = useState(0);
+
+  const form = useForm({
+    mode: 'uncontrolled',
+    initialValues: {
+      username: '',
+      password: '',
+      name: '',
+      email: '',
+      website: '',
+      github: '',
+    },
+
+    validate: (values) => {
+      if (active === 0) {
+        return {
+          username:
+            values.username.trim().length < 6
+              ? 'Username must include at least 6 characters'
+              : null,
+          password:
+            values.password.length < 6 ? 'Password must include at least 6 characters' : null,
+        };
+      }
+
+      if (active === 1) {
+        return {
+          name: values.name.trim().length < 2 ? 'Name must include at least 2 characters' : null,
+          email: /^\S+@\S+$/.test(values.email) ? null : 'Invalid email',
+        };
+      }
+
+      return {};
+    },
+  });
+
+  const nextStep = () =>
+    setActive((current) => {
+      if (form.validate().hasErrors) {
+        return current;
+      }
+      return current < 3 ? current + 1 : current;
+    });
+
+  const prevStep = () => setActive((current) => (current > 0 ? current - 1 : current));
+
+  return (
+    <>
+      <Stepper active={active}>
+        <Stepper.Step label="First step" description="Profile settings">
+          <TextInput
+            label="Username"
+            placeholder="Username"
+            key={form.key('username')}
+            {...form.getInputProps('username')}
+          />
+          <PasswordInput
+            mt="md"
+            label="Password"
+            placeholder="Password"
+            key={form.key('password')}
+            {...form.getInputProps('password')}
+          />
+        </Stepper.Step>
+
+        <Stepper.Step label="Second step" description="Personal information">
+          <TextInput
+            label="Name"
+            placeholder="Name"
+            key={form.key('name')}
+            {...form.getInputProps('name')}
+          />
+          <TextInput
+            mt="md"
+            label="Email"
+            placeholder="Email"
+            key={form.key('email')}
+            {...form.getInputProps('email')}
+          />
+        </Stepper.Step>
+
+        <Stepper.Step label="Final step" description="Social media">
+          <TextInput
+            label="Website"
+            placeholder="Website"
+            key={form.key('website')}
+            {...form.getInputProps('website')}
+          />
+          <TextInput
+            mt="md"
+            label="GitHub"
+            placeholder="GitHub"
+            key={form.key('github')}
+            {...form.getInputProps('github')}
+          />
+        </Stepper.Step>
+        <Stepper.Completed>
+          Completed! Form values:
+          <Code block mt="xl">
+            {JSON.stringify(form.getValues(), null, 2)}
+          </Code>
+        </Stepper.Completed>
+      </Stepper>
+
+      <Group justify="flex-end" mt="xl">
+        {active !== 0 && (
+          <Button variant="default" onClick={prevStep}>
+            Back
+          </Button>
+        )}
+        {active !== 3 && <Button onClick={nextStep}>Next step</Button>}
+      </Group>
+    </>
+  );
+}
+
+Previous
+
+Form actions
+
+Next
+
+AppShell
+
+Welcome to Mantine, React components library that you always wished for
+
+Build fully functional accessible web applications faster than ever
+
+About
+
+Contribute
+About Mantine
+Changelog
+Releases
+
+Community
+
+Chat on Discord
+Follow on X
+Follow on Github
+GitHub discussions
+
+Project
+
+Mantine UI
+Documentation
+Github organization
+npm organization
+
+Built by Vitaly Rtishchev and these awesome people
+
+Join Discord community
+Follow Mantine on X [Metadata: {'url': 'https://mantine.dev/form/recipes/'}]
+==================================================
