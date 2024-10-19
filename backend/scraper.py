@@ -41,7 +41,8 @@ async def main():
 
     # Start recording
     process = subprocess.Popen(ffmpeg_command)
-
+    await page.goto('https://reddit.com')
+    await page.goto('https://netflix.com')
     await asyncio.sleep(5)  # Do your browser tasks here for 10 seconds
 
     # Stop FFmpeg process
